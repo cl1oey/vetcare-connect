@@ -1,0 +1,14 @@
+# Firebase secrets (NEVER commit)
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
+.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
