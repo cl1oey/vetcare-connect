@@ -11,7 +11,7 @@ import 'package:vetcare_connect/providers/firebase_user_provider.dart';
 import 'package:vetcare_connect/views/widgets/drawer_widget.dart';
 import 'package:vetcare_connect/config/theme/app_theme.dart';
 
-import 'utils/validators.dart';    // ← NEW LINE
+import 'package:vetcare_connect/utils/validators.dart';
 
 class ProfileSettingsScreen extends StatefulWidget {
   const ProfileSettingsScreen({super.key});
