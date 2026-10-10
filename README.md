@@ -6,8 +6,8 @@ and pet owner connectivity.
 ## Team
 | Role | Member |
 |------|--------|
-| Lead Developer |@vistaeurie |
-| Implementer | @cl1oey |
+| Lead Developer |@cl1oey |
+| Implementer |@vistaeurie |
 | Reviewer | @CJU04 |
 
 ## Laboratory 3
