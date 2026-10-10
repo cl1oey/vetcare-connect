@@ -8,6 +8,7 @@ import 'package:path_provider/path_provider.dart';
 
 import 'package:vetcare_connect/providers/auth_provider.dart';
 import 'package:vetcare_connect/providers/firebase_user_provider.dart';
+import 'package:vetcare_connect/utils/validators.dart';   // <- ADDED
 import 'package:vetcare_connect/views/widgets/drawer_widget.dart';
 import 'package:vetcare_connect/config/theme/app_theme.dart';
 
@@ -238,8 +239,12 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                                     .surfaceContainerLow
                                 : null,
                           ),
-                          validator: validateFullName,
-
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please enter your full name';
+                            }
+                            return null;
+                          },
                         ),
                         const SizedBox(height: 16),
                         TextFormField(
@@ -259,7 +264,12 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                             fillColor:
                                 !_isEditing ? Colors.grey.shade100 : null,
                           ),
-                          validator: validateContactNumber,
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please enter your contact number';
+                            }
+                            return null;
+                          },
                         ),
                         const SizedBox(height: 16),
                         TextFormField(
@@ -290,7 +300,12 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                             fillColor:
                                 !_isEditing ? Colors.grey.shade100 : null,
                           ),
-                          validator: validateAddress,
+                          validator: (value) {
+                            if (value == null || value.isEmpty) {
+                              return 'Please enter your address';
+                            }
+                            return null;
+                          },
                         ),
                         const SizedBox(height: 32),
                         if (_isEditing)
