@@ -237,13 +237,8 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                                     .surfaceContainerLow
                                 : null,
                           ),
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Please enter your full name';
-                            }
-                            return null;
-                          },
-                        ),
+                          validator: validateFullName,
+                          
                         const SizedBox(height: 16),
                         TextFormField(
                           controller: _contactNumberController,
@@ -262,12 +257,8 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                             fillColor:
                                 !_isEditing ? Colors.grey.shade100 : null,
                           ),
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Please enter your contact number';
-                            }
-                            return null;
-                          },
+                          validator: validateContactNumber,
+                          
                         ),
                         const SizedBox(height: 16),
                         TextFormField(
@@ -298,12 +289,8 @@ class _ProfileSettingsScreenState extends State<ProfileSettingsScreen> {
                             fillColor:
                                 !_isEditing ? Colors.grey.shade100 : null,
                           ),
-                          validator: (value) {
-                            if (value == null || value.isEmpty) {
-                              return 'Please enter your address';
-                            }
-                            return null;
-                          },
+                          validator: validateAddress,
+                          
                         ),
                         const SizedBox(height: 32),
                         if (_isEditing)
