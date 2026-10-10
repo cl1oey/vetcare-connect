@@ -6,9 +6,9 @@ and pet owner connectivity.
 ## Team
 | Role | Member |
 |------|--------|
-| Lead Developer | cl1oey |
-| Implementer | CJU04 |
-| Reviewer | euiri |
+| Lead Developer |@vistaeurie |
+| Implementer | @cl1oey |
+| Reviewer | @CJU04 |
 
 ## Laboratory 3
 This repo demonstrates the GitHub pull request review workflow
