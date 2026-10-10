@@ -8,7 +8,7 @@ import 'package:path_provider/path_provider.dart';
 
 import 'package:vetcare_connect/providers/auth_provider.dart';
 import 'package:vetcare_connect/providers/firebase_user_provider.dart';
-import 'package:vetcare_connect/utils/validators.dart';   // <-- ADD THIS
+import 'package:vetcare_connect/utils/validators.dart';   // <- ADDED
 import 'package:vetcare_connect/views/widgets/drawer_widget.dart';
 import 'package:vetcare_connect/config/theme/app_theme.dart';
 
